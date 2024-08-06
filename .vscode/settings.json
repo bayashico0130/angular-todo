@@ -8,5 +8,6 @@
         "id-unique": true,
         "src-not-empty": true,
         "title-require": true
-    }
+    },
+    "files.autoSave": "onFocusChange"
 }
