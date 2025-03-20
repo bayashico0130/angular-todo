@@ -1,0 +1,10 @@
+<nz-list nzBordered>
+  @for (task of tasks; track task.id) {
+    <nz-list-item>
+      <app-task-list-item [task]="task" (updateTask)="updateTask($event)"></app-task-list-item>
+    </nz-list-item>
+  }
+  <nz-list-item>
+    <app-task-form (addTask)="addTask($event)"></app-task-form>
+  </nz-list-item>
+</nz-list>

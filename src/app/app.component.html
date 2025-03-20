@@ -1,14 +1,7 @@
-<ul>
-  @for (task of tasks; track task.title) {
-    <li class="{{ task.done ? 'done' : '' }}">
-      <!-- @if (task.done) {
-        Done
-      } -->
-      {{ task.title }}
-    </li>
-  }
-  <li>
-    <input type="text" [(ngModel)]="newTaskTitle">
-    <button (click)="addTask()">Add</button>
-  </li>
-</ul>
+<nz-page-header nzTitle="AngularTodo"></nz-page-header>
+
+<div nz-row>
+  <div nz-col nzXs="24" nzLg="18" nzXl="15" nzXXl="10">
+    <app-task-list></app-task-list>
+  </div>
+</div>
